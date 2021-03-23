@@ -3,11 +3,11 @@ appointments.
 
 1. To compile the whole program in one single command:
 
-  g++ Appointment.cpp unsorted.cpp listDriver.cpp 
+  g++ Appointment.cpp sorted.cpp listDriver.cpp 
 
  or,
 
-  g++ -o apptBookApp  Appointment.cpp unsorted.cpp listDriver.cpp 
+  g++ -o apptBookApp  Appointment.cpp sorted.cpp listDriver.cpp 
 
   
 
@@ -17,12 +17,12 @@ appointments.
    -c option means only compile (to .o file)
 
   g++ -c Appointment.cpp  
-  g++ -c unsorted.cpp
+  g++ -c sorted.cpp
   g++ -c listDriver.cpp
 
  b) Link all .o files together to generate executable file
 
-  g++ Appointment.o unsorted.o listDriver.o //This will generate a.out file
+  g++ Appointment.o sorted.o listDriver.o //This will generate a.out or a.exe file
 
   g++ -o apptBookApp Appointment.o unsorted.o listDriver.o //This will generate executable file
    // named apptBookApp 
@@ -31,3 +31,7 @@ appointments.
  
 3. You can create a script with the command inside it, to avoid typing the whole command everytime.
   see example file:  build
+  
+  c) Execute the program using:
+  
+  ./a.out or ./a.exe
